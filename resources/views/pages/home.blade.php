@@ -2,6 +2,8 @@
 
 @section('movies')
 <main>
-    <h1>prova</h1>
+@foreach( $movies as $elem )
+    <h2>{{ $elem['title'] }}</h2>
+@endforeach
 </main>
 @endsection
